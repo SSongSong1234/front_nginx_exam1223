@@ -1,0 +1,38 @@
+#container{
+    width: 100%;
+}
+
+header, main, footer{
+    text-align: center;
+}
+
+main{
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    margin: 10px 0; /* 위아래여백 좌우여백 */
+}
+
+#nav{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.nav-item > a{
+    color: black;
+    text-decoration: none;
+}
+
+#board-list{
+    width: 700px;
+    margin: 10px auto;
+}
+
+#board-list,#board-list th , #board-list td{
+    border: 1px solid;
+    border-collapse: collapse;
+
+}
