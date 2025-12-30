@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>서버 배포 실습 - Front</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1>Nginx를 활용한 웹 페이지 실습</h1>
+            <ul id="nav">
+                <li class="nav-item"><a href="index.html">메인페이지</a></li>
+                <li class="nav-item"><a href="#">상세페이지</a></li>
+                <li class="nav-item"><a href="board.html">게시판</a></li>
+            </ul>
+        </header>
+        <main>
+            <!-- table>(tr>td*5)*4 -->
+            <form action="#" id="boardFrm" name="boardFrm" method="post">
+            <table id="board-list">
+                <tr>
+                    <td>글제목</td>
+                    <td><input type="text" name="b_title"></td>
+                </tr>
+                <tr>
+                    <td>작성자</td>
+                    <td><input type="text" name="b_writer"></td>
+                </tr>
+                <tr>
+                    <td>내용</td>
+                    <td><textarea name="b_content" cols="80" rows="10" style="resize: none;"></textarea></td>
+                </tr>
+                <tr>
+                    <td>첨부파일</td>
+                    <td><input type="file" name="b_file"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="작성" id="addBtn">
+                    </td>
+                </tr>
+            </table>
+            </form>
+
+
+        </main>
+        <footer>
+            Copyright © 생성형AI과정. All rights reserved.
+        </footer>
+    </div>
+
+
+
+
+
+
+
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./assets/js/boardInsert.js"></script>
+
+</body>
+</html>

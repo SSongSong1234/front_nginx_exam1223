@@ -4,7 +4,8 @@ const boardList = document.getElementById("board-list");
 const getList = async () => {
     
     // axios 문법
-    let res = await axios.get("http://localhost:8081/list");
+    // let res = await axios.get("http://localhost:8081/api/board/list"); // 테스트용
+    let res = await axios.get("/api/board/list");
     console.log(res.data);
     let boards = res.data; // 서버에서 받아온 데이터
     let resultHTML = `
@@ -20,7 +21,7 @@ const getList = async () => {
         resultHTML += `
                 <tr>     
                     <td>${boards[i].b_idx}</td>
-                    <td>${boards[i].b_title}</td>
+                    <td><a href="boardDetail.html?idx=${boards[i].b_idx}">${boards[i].b_title}</a></td>
                     <td>${boards[i].b_writer}</td>
                     <td>${boards[i].b_datetime}</td>
                     <td>${boards[i].b_count}</td>
