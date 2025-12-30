@@ -25,6 +25,9 @@ const addBoard = async (event) => {
         let res = await axios.post("/api/board/register", bData);
         console.log(res.data);
 
+        // 글 작성완료 후 게시판 페이지로 이동
+        location.href = "borad.html";
+
     }catch(err){
         console.log(err);
     }
