@@ -1,0 +1,62 @@
+/* src/Member/pages/legal/LegalCenter.css */
+.lcPage{
+  min-height: calc(100vh - 72px);
+  background:#fff;
+  padding: 26px 16px 60px;
+  display:flex;
+  justify-content:center;
+}
+.lcWrap{ width: 1100px; max-width: 100%; }
+.lcTop{ text-align:center; margin-bottom: 16px; }
+.lcTitle{ margin:0; font-size: 26px; font-weight: 900; }
+.lcSub{ margin-top: 8px; color:#6b7280; font-size: 13px; }
+
+.lcTabs{
+  display:flex;
+  gap: 8px;
+  justify-content:center;
+  flex-wrap:wrap;
+  margin: 18px 0 10px;
+}
+.lcTab{
+  border:1px solid #e5e7eb;
+  background:#f3f4f6;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor:pointer;
+  font-weight: 800;
+}
+.lcTab.active{
+  background:#fff;
+  border-color:#111827;
+}
+
+.lcBar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-top:1px solid #e5e7eb;
+  border-bottom:1px solid #e5e7eb;
+  padding: 12px 6px;
+  margin-bottom: 14px;
+}
+.lcMeta{ margin-left: 8px; color:#6b7280; font-size: 12px; }
+.lcMini{
+  border:1px solid #e5e7eb;
+  background:#fff;
+  padding: 8px 10px;
+  border-radius: 10px;
+  cursor:pointer;
+  font-weight: 800;
+}
+
+.lcBody{
+  border:1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 18px;
+  background:#fff;
+}
+.lcSec{ padding-bottom: 14px; border-bottom:1px solid #f1f5f9; margin-bottom: 14px; }
+.lcH2{ margin:0 0 8px; font-size: 16px; font-weight: 900; }
+.lcP{ margin:6px 0; font-size: 14px; line-height: 1.7; }
+.lcHint{ margin-top: 10px; color:#6b7280; font-size: 12px; }

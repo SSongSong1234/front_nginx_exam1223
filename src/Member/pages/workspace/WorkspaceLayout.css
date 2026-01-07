@@ -1,0 +1,15 @@
+.weditWs {
+  min-height: 100vh;
+  background: #0b0e13;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.weditWs__main {
+  padding: 18px 18px 30px;
+}
+
+@media (max-width: 720px) {
+  .weditWs__main {
+    padding: 14px 14px 24px;
+  }
+}

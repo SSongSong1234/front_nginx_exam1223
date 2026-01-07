@@ -1,0 +1,99 @@
+/* ✅ 페이지 전체: 가운데 정렬 (Navbar/Footter는 MainLayout이 이미 깔아줌) */
+.nickPage{
+  padding: 120px 20px 140px;
+  display: flex;
+  justify-content: center;
+}
+
+.nickInner{
+  width: 520px;
+  max-width: 100%;
+  text-align: center; /* ✅ 사진 2번처럼 타이틀/설명 중앙 */
+}
+
+.nickTitle{
+  margin: 0 0 10px;
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+}
+
+.nickSub{
+  margin: 0 0 26px;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* ✅ 에러 */
+.nickError{
+  width: 360px;
+  max-width: 100%;
+  margin: 0 auto 14px;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #991b1b;
+  padding: 10px 12px;
+  font-size: 12px;
+  text-align: left;
+}
+
+/* ✅ 폼 영역: 가운데 좁게 */
+.nickForm{
+  width: 360px;       /* ✅ 사진 2번 입력 폭 느낌 */
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: left;   /* ✅ 라벨/인풋 정렬 예쁘게 */
+}
+
+.nickLabel{
+  display: block;
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: 800;
+  color: #111827;
+}
+
+.nickInput{
+  width: 100%;
+  height: 44px;
+  box-sizing: border-box;
+  border: 1px solid #e5e7eb;
+  border-radius: 0;          /* ✅ 직각 */
+  padding: 0 12px;
+  outline: none;
+  font-size: 14px;
+  background: #fff;
+}
+
+.nickInput:focus{
+  border-color: #111827;
+}
+
+.nickBtnRow{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.nickBtn{
+  height: 44px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  border-radius: 0;   /* ✅ 직각 */
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.nickBtnDark{
+  background: #111827;
+  border-color: #111827;
+  color: #fff;
+}
+
+.nickHint{
+  margin: 14px 0 0;
+  font-size: 12px;
+  color: #6b7280;
+  text-align: center;
+}

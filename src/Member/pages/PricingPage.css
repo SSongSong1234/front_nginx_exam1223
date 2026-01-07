@@ -1,0 +1,447 @@
+:root{
+  --pp-text:#111827;
+  --pp-muted:#6b7280;
+  --pp-line:#e5e7eb;
+  --pp-bg:#ffffff;
+  --pp-soft:#f8fafc;
+  --pp-blue:#2563eb;
+  --pp-blueSoft:#eff6ff;
+  --pp-shadow:0 14px 40px rgba(0,0,0,.08);
+
+  /* ✅ 사진처럼 여백 스케일 */
+  --pp-space-1: 8px;
+  --pp-space-2: 12px;
+  --pp-space-3: 16px;
+  --pp-space-4: 24px;
+  --pp-space-5: 32px;
+  --pp-space-6: 120px;
+  --pp-space-7: 64px;
+}
+
+.pricingPage{
+  background: var(--pp-bg);
+  color: var(--pp-text);
+}
+
+.ppContainer{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+/* ================= HERO ================= */
+.ppHero{
+  background: linear-gradient(180deg, #f4fbff 0%, #ffffff 65%);
+  padding: var(--pp-space-6) 0 var(--pp-space-4);
+}
+
+/* ✅ Hero와 다음 섹션 사이 여백(사진처럼 큼) */
+.ppHero + .ppSection{
+  margin-top: var(--pp-space-6);
+}
+
+.ppHeroGrid{
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: var(--pp-space-4);
+  align-items: start;
+}
+
+/* left */
+.ppPill{
+  display: inline-flex;
+  align-items: center;
+  gap: var(--pp-space-1);
+  border: 1px solid var(--pp-line);
+  background: #fff;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+.ppDot{
+  width: 8px; height: 8px;
+  border-radius: 999px;
+  background: #60a5fa;
+  box-shadow: 0 0 0 3px rgba(96,165,250,.18);
+}
+
+.ppTitle{
+  margin: var(--pp-space-3) 0 var(--pp-space-2);
+  font-size: 36px;
+  line-height: 1.18;
+  letter-spacing: -0.6px;
+}
+
+.ppSub{
+  margin: 0;
+  color: var(--pp-muted);
+  line-height: 1.65;
+  font-size: 13px;
+  max-width: 520px;
+}
+
+.ppHeroBtns{
+  display: flex;
+  gap: 10px;
+  margin-top: var(--pp-space-3);
+}
+
+.ppBtnPrimary{
+  height: 42px;
+  padding: 0 16px;
+  border: none;
+  border-radius: 999px;
+  background: #111827;
+  color: #fff;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.ppBtnGhost{
+  height: 42px;
+  padding: 0 16px;
+  border: 1px solid var(--pp-line);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--pp-text);
+  font-weight: 900;
+  cursor: pointer;
+}
+
+/* right card */
+.ppHeroCard{
+  border: 1px solid var(--pp-line);
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: var(--pp-shadow);
+  padding: 16px;
+}
+
+.ppHeroCardHead{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--pp-space-2);
+}
+
+.ppHeroCardTitle{ font-weight: 900; font-size: 13px; }
+.ppHeroCardDesc{
+  margin-top: 4px;
+  color: var(--pp-muted);
+  font-size: 12px;
+}
+
+.ppSegment{
+  display: inline-flex;
+  border: 1px solid var(--pp-line);
+  border-radius: 999px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.ppSegBtn{
+  height: 30px;
+  padding: 0 12px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 12px;
+  color: var(--pp-muted);
+}
+.ppSegBtn.isActive{
+  background: #111827;
+  color: #fff;
+}
+
+.ppHeroCardBody{ margin-top: var(--pp-space-3); }
+
+.ppHeroMiniTitle{
+  font-size: 12px;
+  font-weight: 900;
+  opacity: .92;
+}
+.ppMuted{ color: var(--pp-muted); font-weight: 800; }
+
+.ppMiniGrid{
+  margin-top: var(--pp-space-2);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--pp-space-2);
+}
+
+.ppMiniBox{
+  border: 1px solid var(--pp-line);
+  background: #f9fafb;
+  border-radius: 14px;
+  padding: 10px 12px;
+}
+
+.ppMiniTop{ font-weight: 900; font-size: 12px; }
+.ppMiniBottom{
+  margin-top: 4px;
+  font-size: 12px;
+  color: var(--pp-muted);
+}
+
+.ppHeroNote{
+  margin-top: var(--pp-space-3);
+  font-size: 11px;
+  color: var(--pp-muted);
+  line-height: 1.5;
+}
+
+/* ================= SECTION ================= */
+/* ✅ 섹션 기본 여백 */
+.ppSection{
+  padding: 0; /* 내부에서 컨트롤 */
+}
+
+/* ✅ 섹션별 여백 프리셋 (사진처럼) */
+.ppSection--loose{ margin-top: var(--pp-space-7); }
+.ppSection--mid{ margin-top: var(--pp-space-6); }
+.ppSection--tight{ margin-top: var(--pp-space-5); }
+
+/* ✅ 섹션 내부 위/아래 패딩 */
+.ppSectionInner{
+  padding: var(--pp-space-4) 0;
+}
+
+/* 제목/설명과 본문 사이 여백 */
+.ppSectionHead h2{
+  margin: 0;
+  font-size: 18px;
+  font-weight: 900;
+}
+.ppSectionHead p{
+  margin: 6px 0 0;
+  color: var(--pp-muted);
+  font-size: 12px;
+}
+
+/* ================= PLANS ================= */
+.ppPlanGrid{
+  margin-top: var(--pp-space-4); /* ✅ 사진처럼 넉넉 */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--pp-space-3);
+}
+
+.ppPlanCard{
+  border: 1px solid var(--pp-line);
+  border-radius: 16px;
+  background: #fff;
+  padding: 14px;
+  box-shadow: 0 10px 24px rgba(0,0,0,.04);
+  position: relative;
+}
+
+.ppPlanCard.isRecommend{
+  border: 2px solid #93c5fd;
+  box-shadow: 0 16px 32px rgba(37,99,235,.12);
+}
+
+.ppPlanTop{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--pp-space-2);
+}
+
+.ppPlanTag{
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--pp-line);
+  background: #fff;
+  font-size: 11px;
+  color: var(--pp-muted);
+  font-weight: 900;
+}
+
+.ppBadge{
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: var(--pp-blueSoft);
+  border: 1px solid #bfdbfe;
+  color: var(--pp-blue);
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.ppPlanNameRow{
+  margin-top: var(--pp-space-2);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.ppPlanName{ font-weight: 900; font-size: 14px; }
+.ppCrown{ font-size: 12px; opacity: .9; }
+
+.ppPriceRow{
+  margin-top: var(--pp-space-1);
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+.ppPrice{ font-size: 20px; font-weight: 900; }
+.ppPriceAsk{ font-size: 18px; font-weight: 900; }
+.ppPer{ color: var(--pp-muted); font-size: 12px; font-weight: 800; }
+
+.ppPlanDesc{
+  margin-top: var(--pp-space-2);
+  color: var(--pp-muted);
+  font-size: 12px;
+  line-height: 1.5;
+  min-height: 34px;
+}
+
+.ppBulletList{
+  margin: var(--pp-space-3) 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: var(--pp-space-2);
+}
+
+.ppBullet{
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  font-size: 12px;
+}
+.ppCheck{
+  width: 18px; height: 18px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 999px;
+  background: #f3f4f6;
+  font-weight: 900;
+  flex: 0 0 auto;
+}
+
+.ppPlanCta{
+  margin-top: var(--pp-space-3);
+  width: 100%;
+  height: 42px;
+  border-radius: 12px;
+  border: 1px solid var(--pp-line);
+  background: #fff;
+  cursor: pointer;
+  font-weight: 900;
+}
+.ppPlanCta.isDark{
+  background: #111827;
+  color: #fff;
+  border-color: #111827;
+}
+
+/* ================= COMPARE ================= */
+.ppTableWrap{
+  margin-top: var(--pp-space-4); /* ✅ 사진처럼 넉넉 */
+  border: 1px solid var(--pp-line);
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.ppTable{
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+.ppTable thead th{
+  background: var(--pp-soft);
+  padding: 12px 10px;
+  border-bottom: 1px solid var(--pp-line);
+  color: var(--pp-muted);
+  font-weight: 900;
+}
+.ppTable td{
+  padding: 12px 10px;
+  border-bottom: 1px solid #f1f5f9;
+  text-align: center;
+}
+.ppThLeft, .ppTdLeft{
+  text-align: left !important;
+  font-weight: 900;
+}
+
+/* ================= FAQ ================= */
+.ppFaq{
+  margin-top: var(--pp-space-4); /* ✅ 사진처럼 넉넉 */
+  border: 1px solid var(--pp-line);
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+}
+.ppFaqItem{ border-bottom: 1px solid #f1f5f9; }
+.ppFaqItem:last-child{ border-bottom: none; }
+
+.ppFaqQ{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--pp-space-2);
+  padding: 14px 14px;
+  border: none;
+  background: #fff;
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 12px;
+}
+.ppFaqIcon{ color: var(--pp-muted); font-weight: 900; }
+
+.ppFaqA{
+  padding: 0 14px 14px;
+  color: var(--pp-muted);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* ================= BOTTOM CTA ================= */
+.ppBottomCta{
+  margin-top: var(--pp-space-6); /* ✅ FAQ 아래에서 크게 띄우기 */
+  border: 1px solid var(--pp-line);
+  background: #f8fafc;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--pp-space-3);
+}
+
+.ppBottomTitle{ font-weight: 900; font-size: 13px; }
+.ppBottomDesc{
+  margin-top: 4px;
+  font-size: 12px;
+  color: var(--pp-muted);
+}
+.ppBottomBtns{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 980px){
+  .ppHeroGrid{ grid-template-columns: 1fr; }
+  .ppPlanGrid{ grid-template-columns: 1fr 1fr; }
+  .ppHero + .ppSection{ margin-top: var(--pp-space-5); }
+  .ppSection--loose{ margin-top: var(--pp-space-6); }
+}
+
+@media (max-width: 560px){
+  .ppPlanGrid{ grid-template-columns: 1fr; }
+  .ppTitle{ font-size: 28px; }
+  .ppBottomCta{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

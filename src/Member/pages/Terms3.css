@@ -1,0 +1,48 @@
+.donePage {
+  min-height: calc(100vh - 72px); /* Navbar 높이만큼 빼기 (네 Navbar가 72px 기준) */
+  display: grid;
+  place-items: center;
+  padding: 60px 16px;
+  background: #ffffff;
+  color: #111827;
+}
+
+.doneCard {
+  width: 520px;
+  max-width: 92vw;
+  text-align: center;
+}
+
+.doneTitle {
+  margin: 0 0 10px;
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: -0.2px;
+}
+
+.doneSub {
+  margin: 0 0 28px;
+  font-size: 13px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.user {
+  font-weight: 800;
+  color: #111827;
+}
+
+.doneBtn {
+  width: 260px;
+  height: 46px;
+  border-radius: 8px;
+  border: 1px solid #111827;
+  background: #111827;
+  color: #ffffff;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.doneBtn:hover {
+  opacity: 0.92;
+}

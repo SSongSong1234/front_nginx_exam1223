@@ -1,0 +1,204 @@
+/* WorkspaceLibraryCorrection 전용 (충돌 방지)
+   className prefix: weditLib__
+*/
+
+.weditLib {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.weditLib__head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 10px 8px 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: 18px;
+}
+
+.weditLib__title {
+  font-size: 22px;
+  font-weight: 950;
+}
+
+.weditLib__sub {
+  margin-top: 6px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.weditLib__headActions {
+  display: flex;
+  gap: 10px;
+}
+
+.weditLib__ghost {
+  height: 34px;
+  padding: 0 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(0, 0, 0, 0.18);
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.weditLib__ghost:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.weditLib__primary {
+  height: 36px;
+  padding: 0 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  background: rgba(56, 189, 248, 0.18);
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 950;
+  cursor: pointer;
+}
+
+.weditLib__primary:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.weditLib__grid {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 16px;
+}
+
+.weditLib__preview {
+  min-height: 420px;
+}
+
+.weditLib__previewCard {
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.18);
+  overflow: hidden;
+}
+
+.weditLib__previewTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.weditLib__previewName {
+  font-weight: 950;
+  max-width: 70%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.weditLib__pill {
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 900;
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  background: rgba(56, 189, 248, 0.12);
+}
+
+.weditLib__previewImgWrap {
+  height: min(62vh, 680px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.22);
+}
+
+.weditLib__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.weditLib__empty {
+  height: 420px;
+  border-radius: 18px;
+  border: 1px dashed rgba(255, 255, 255, 0.16);
+  background: rgba(0, 0, 0, 0.14);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.weditLib__emptyTitle {
+  font-weight: 950;
+  font-size: 16px;
+}
+
+.weditLib__emptySub {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.weditLib__panel {
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.18);
+  padding: 14px;
+  height: fit-content;
+}
+
+.weditLib__panel.isDisabled {
+  opacity: 0.8;
+}
+
+.weditLib__panelTitle {
+  font-weight: 950;
+  margin-bottom: 6px;
+}
+
+.weditLib__panelSub {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.58);
+  margin-bottom: 14px;
+}
+
+.weditLib__group {
+  display: grid;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.16);
+}
+
+.weditLib__row {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+.weditLib__row span {
+  font-size: 12px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.weditLib__row input[type="range"] {
+  width: 100%;
+}
+
+.weditLib__panelFooter {
+  margin-top: 14px;
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 1100px) {
+  .weditLib__grid {
+    grid-template-columns: 1fr;
+  }
+}

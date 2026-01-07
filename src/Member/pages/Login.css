@@ -1,0 +1,243 @@
+/* ===== 전체 레이아웃 ===== */
+.loginWrap{
+  min-height: calc(100vh - 72px);
+  background:#fff;
+  padding: 18px;
+}
+
+.loginContainer{
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 680px;
+  background:#fff;
+
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* 가운데 세로 라인 */
+.leftArea{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding: 24px;
+}
+
+.promoImg{
+  width: 75%;
+  max-width: 520px;
+  height: auto;
+  display:block;
+}
+
+/* 오른쪽: 완전 중앙정렬 */
+.rightArea{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding: 24px;
+}
+
+/* ===== 로그인 카드 ===== */
+.loginCard{
+  width: 360px;
+  max-width: 100%;
+  padding: 34px 28px;        /* ✅ 박스 안쪽 여백 조금 늘리기 */
+  background: #fff;
+
+  border: 2px solid #e5e7eb; /* ✅ 오른쪽 보더 */
+
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.cardHeader{
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.cardLogo{
+  margin: 0;
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+}
+
+.cardSub{
+  margin: 10px 0 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color:#6b7280;
+}
+
+/* ===== 폼 ===== */
+.form{
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 14px;
+}
+
+/* 에러 */
+.loginError{
+  border: 1px solid #fecaca;
+  background: #fff1f2;
+  color: #991b1b;
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-size: 13px;
+}
+
+.loginNotice{
+  border: 1px solid #bbf7d0;
+  background: #f0fdf4;
+  color: #166534;
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-size: 13px;
+}
+
+
+/* 입력 줄 */
+.field{
+  width: 100%;
+}
+
+.input{
+  width: 100%;
+  border: none !important;
+  outline: none;
+  background: transparent !important;
+
+  /* ✅ 밑줄만 */
+  border-bottom: 1px solid #d1d5db !important;
+
+  padding: 14px 0;
+  font-size: 13px;
+  color: #111827;
+}
+
+.input::placeholder{
+  color:#9ca3af;
+}
+
+/* 비번 row */
+.pwRow{
+  width: 100%;
+  display:flex;
+  align-items:center;
+  gap: 10px;
+}
+
+.pwRow .input{
+  flex: 1;
+  min-width: 0;
+}
+
+/* ✅ 스샷 느낌: 작은 회색 버튼 */
+.pwToggle{
+  height: 26px;
+  padding: 0 10px;
+  font-size: 11px;
+  color:#6b7280;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  border-radius: 6px;
+  cursor:pointer;
+  white-space: nowrap;
+}
+
+/* 로그인 버튼 */
+.loginBtn{
+  width: 100%;
+  height: 44px;
+  border: none;
+  background:#111827;
+  color:#fff;
+  font-weight: 900;
+  cursor:pointer;
+  margin-top: 6px;
+}
+
+.loginBtn:disabled{
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+/* 하단 링크: 가운데 정렬 + 간격 */
+.subLinks{
+  width: 100%;
+  display:flex;
+  justify-content:center;
+  gap: 14px;
+  font-size: 11px;
+  color:#9ca3af;
+  margin-top: 4px;
+}
+
+.linkBtn{
+  border: none;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* 소셜 */
+.social{
+  width: 100%;
+  display:flex;
+  justify-content:center;
+  gap: 14px;
+  margin-top: 8px;
+}
+
+.socialBtn{
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.socialIcon{
+  width: 44px;       /* ✅ 스샷 느낌: 살짝 작게 */
+  height: 44px;
+  object-fit: cover;
+}
+
+.googleBox{
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.googleImg{
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  display:block;
+}
+
+/* 반응형 */
+@media (max-width: 980px){
+  .loginContainer{
+    grid-template-columns: 1fr;
+  }
+  .leftArea{
+    border-right: none;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .promoImg{
+    width: 80%;
+  }
+}

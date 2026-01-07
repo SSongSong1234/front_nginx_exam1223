@@ -1,0 +1,73 @@
+/* src/Member/pages/Terms.css */
+.termsPage{
+  min-height: calc(100vh - 72px);
+  display:flex;
+  justify-content:center;
+  padding: 40px 16px 80px;
+  background:#fff;
+}
+
+.termsBox{
+  width: 560px;
+  max-width: 100%;
+  text-align:center;
+}
+
+.termsTitle{ margin:0; font-size: 34px; font-weight: 800; }
+.termsSub{ margin:10px 0 26px; color:#6b7280; font-size: 14px; }
+
+.termsAll{
+  border-top:1px solid #e5e7eb;
+  padding-top: 14px;
+  margin-top: 10px;
+}
+
+.termsList{
+  margin-top: 14px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.termsItem{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding: 14px 0;
+  border-bottom:1px solid #f1f5f9;
+}
+
+.chkRow{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  cursor:pointer;
+  user-select:none;
+}
+
+.reqTag{ color:#111827; font-weight: 700; font-size: 13px; }
+.docTitle{ font-size: 14px; color:#111827; }
+
+.viewBtn{
+  background: transparent;
+  border:0;
+  color:#6b7280;
+  cursor:pointer;
+  font-weight: 700;
+}
+
+.termsActions{
+  display:flex;
+  justify-content:center;
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.btn{
+  width: 180px;
+  padding: 12px 14px;
+  border:1px solid #e5e7eb;
+  cursor:pointer;
+}
+
+.btn.ghost{ background:#f3f4f6; }
+.btn.primary{ background:#111827; color:#fff; border-color:#111827; }
+.btn.primary.disabled{ opacity:.45; cursor:not-allowed; }

@@ -1,0 +1,49 @@
+/* src/Member/pages/legal/LegalDetail.css */
+.ldPage{
+  min-height: calc(100vh - 72px);
+  background:#fff;
+  display:flex;
+  justify-content:center;
+  padding: 28px 16px 60px;
+}
+.ldWrap{ width: 760px; max-width: 100%; }
+.ldHeader{ text-align:center; margin-bottom: 14px; }
+.ldTitle{ margin:0; font-size: 28px; font-weight: 900; }
+.ldMeta{ margin-top: 8px; font-size: 12px; color:#6b7280; }
+
+.ldSummary{
+  border:1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 14px;
+  background:#fafafa;
+  margin: 16px auto;
+}
+.ldSumItem{ font-size: 14px; color:#111827; line-height: 1.6; }
+
+.ldBodyBox{
+  border:1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 18px 18px;
+  height: 520px;
+  overflow:auto;
+}
+.ldSec{ padding-bottom: 14px; border-bottom: 1px solid #f1f5f9; margin-bottom: 14px; }
+.ldH2{ margin:0 0 8px; font-size: 16px; font-weight: 900; }
+.ldP{ margin:6px 0; font-size: 14px; line-height: 1.7; color:#111827; }
+.ldHint{ margin-top: 10px; color:#6b7280; font-size: 12px; }
+
+.ldActions{
+  margin-top: 18px;
+  display:flex;
+  justify-content:center;
+  gap: 10px;
+}
+.ldBtn{
+  width: 160px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border:1px solid #e5e7eb;
+  cursor:pointer;
+}
+.ldBtn.ghost{ background:#f3f4f6; }
+.ldBtn.primary{ background:#111827; color:#fff; border-color:#111827; }

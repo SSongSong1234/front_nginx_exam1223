@@ -1,0 +1,81 @@
+:root{
+  --text:#111827;
+  --muted:#6b7280;
+  --line:#e5e7eb;
+  --bg:#f9fafb;
+}
+
+.successPage{
+  background: var(--bg);
+  min-height: calc(100vh - 72px);
+  padding: 54px 18px 80px;
+  color: var(--text);
+}
+
+.successWrap{
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.successIcon{
+  width: 56px;
+  height: 56px;
+  border-radius: 999px;
+  background: #111827;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-size: 24px;
+  font-weight: 900;
+  margin: 0 auto 16px;
+}
+
+.successTitle{
+  margin: 0;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.successSub{
+  margin: 8px 0 22px;
+  color: var(--muted);
+}
+
+.receiptCard{
+  margin: 0 auto 18px;
+  width: min(520px, 100%);
+  background: #fff;
+  border: 1px solid var(--line);
+  padding: 16px;
+}
+
+.receiptRow{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px dashed var(--line);
+  font-size: 13px;
+}
+.receiptRow:last-child{ border-bottom: none; }
+
+.successBtn{
+  width: min(520px, 100%);
+  height: 46px;
+  border: none;
+  background: #111827;
+  color: #fff;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.ghostBtn{
+  margin-top: 10px;
+  width: min(520px, 100%);
+  height: 42px;
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font-weight: 800;
+}

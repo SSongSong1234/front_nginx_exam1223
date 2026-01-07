@@ -1,0 +1,238 @@
+/* ✅ 페이지 전체 중앙 */
+.wdPage{
+  padding: 70px 20px 90px;
+  display: flex;
+  justify-content: center;
+}
+
+/* ✅ 스샷처럼 중앙 넓은 레이아웃 */
+.wdShell{
+  width: 980px;
+  max-width: 100%;
+}
+
+/* ✅ 제목 */
+.wdTitle{
+  text-align: center;
+  font-size: 28px;
+  font-weight: 900;
+  margin: 0 0 10px;
+}
+
+.wdSub{
+  text-align: center;
+  font-size: 12px;
+  color: #6b7280;
+  margin: 0 0 18px;
+}
+
+/* ✅ 제목 아래 가로 라인 */
+.wdLine{
+  height: 2px;
+  background: #111827;
+  opacity: .25;
+  margin: 10px 0 24px;
+}
+
+.wdBody{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ✅ 에러 */
+.wdError{
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #991b1b;
+  padding: 10px 12px;
+  font-size: 12px;
+}
+
+/* ✅ 안내 박스 */
+.wdNotice{
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  padding: 16px;
+}
+
+.wdNoticeHead{
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.wdNoticeIcon{
+  width: 26px;
+  height: 26px;
+  border-radius: 999px;
+  background: #fee2e2;
+  color: #991b1b;
+  font-weight: 900;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+}
+
+.wdNoticeTitle{
+  font-weight: 900;
+  font-size: 13px;
+  color: #111827;
+}
+
+.wdNoticeDesc{
+  margin-top: 4px;
+  font-size: 12px;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+.wdNoticeList{
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  padding: 14px;
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.wdNoticeList ul{
+  margin: 0;
+  padding-left: 18px;
+  font-size: 12px;
+  color: #374151;
+  line-height: 1.6;
+}
+
+.wdNoticeTag{
+  font-size: 11px;
+  color: #6b7280;
+  white-space: nowrap;
+  margin-top: 2px;
+}
+
+/* ✅ 폼 박스 */
+.wdForm{
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  padding: 18px;
+}
+
+/* ✅ 폼 내부를 좁게 + 가운데 */
+.wdInner{
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+/* ✅ 필드 */
+.wdField{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.wdLabel{
+  font-size: 12px;
+  font-weight: 800;
+  color: #111827;
+}
+
+/* ✅ 직각(라디오스 X) */
+.wdInput,
+.wdSelect{
+  width: 100%;
+  box-sizing: border-box;
+  height: 42px;
+  border: 1px solid #e5e7eb;
+  border-radius: 0;
+  padding: 0 12px;
+  outline: none;
+  font-size: 14px;
+  background: #fff;
+}
+
+.wdTextarea{
+  width: 100%;
+  box-sizing: border-box;
+  height: 120px;
+  border: 1px solid #e5e7eb;
+  border-radius: 0;
+  padding: 12px;
+  outline: none;
+  font-size: 14px;
+  resize: none;
+  background: #fff;
+}
+
+.wdInput:focus, .wdSelect:focus, .wdTextarea:focus{
+  border-color: #111827;
+}
+
+.wdHint{
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 6px;
+}
+
+/* ✅ 체크박스 + 문구 정렬 (가운데/줄맞춤) */
+.wdAgreeRow{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;  /* ✅ 전체를 가운데로 */
+  margin-top: 10px;
+}
+
+.wdCheckbox{
+  width: 16px;
+  height: 16px;
+}
+
+.wdAgreeText{
+  font-size: 12px;
+  color: #111827;
+  line-height: 1.4;
+}
+
+/* ✅ 버튼 */
+.wdBtnRow{
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.wdBtn{
+  height: 46px;
+  min-width: 160px;
+  border: 1px solid #e5e7eb;
+  border-radius: 0;      /* ✅ 직각 */
+  background: #fff;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.wdBtnRed{
+  background: #ef4444;
+  border-color: #ef4444;
+  color: #fff;
+}
+
+.wdBtn:disabled{
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+/* ✅ 반응형 */
+@media (max-width: 900px){
+  .wdNoticeList{
+    flex-direction: column;
+  }
+  .wdNoticeTag{
+    margin-top: 10px;
+  }
+}

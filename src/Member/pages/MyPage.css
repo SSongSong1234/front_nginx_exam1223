@@ -1,0 +1,136 @@
+/* ✅ 페이지 전체 중앙 정렬 */
+.myPage{
+  min-height: calc(100vh - 72px);
+  padding: 110px 16px 80px;
+  background: #fff;
+}
+
+/* ✅ 상단 타이틀 라인 (가운데 정렬 유지) */
+.myHead{
+  width: 520px;
+  max-width: 92vw;
+  margin: 0 auto 18px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ✅ 왼쪽 화살표 버튼(이미지) */
+.myBack{
+  position: absolute;
+  left: 0;
+  width: 42px;
+  height: 42px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ✅ 화살표 이미지 */
+.myBackImg{
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+/* ✅ 가운데 제목 */
+.myTitle{
+  margin: 0;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: -0.3px;
+}
+
+/* ✅ 카드 */
+.myCard{
+  width: 420px;
+  max-width: 92vw;
+  margin: 0 auto;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  padding: 22px 22px 18px;
+}
+
+.myCardTitle{
+  margin: 0 0 14px;
+  font-size: 13px;
+  font-weight: 900;
+  color: #111827;
+}
+
+/* ✅ 표 느낌 정렬 */
+.myTable{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.myTr{
+  display: grid;
+  grid-template-columns: 90px 1fr 70px;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.myTh{
+  font-size: 12px;
+  font-weight: 800;
+  color: #6b7280;
+}
+
+.myTd{
+  font-size: 12.5px;
+  font-weight: 800;
+  color: #111827;
+}
+
+.myLink{
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 900;
+  text-align: right;
+  padding: 0;
+}
+
+.myLink:hover{
+  text-decoration: underline;
+}
+
+.myAction{
+  height: 1px;
+}
+
+/* ✅ 회원탈퇴 버튼 */
+.myDangerArea{
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+}
+
+.myDangerBtn{
+  width: 160px;
+  height: 38px;
+  border: 1px solid #ef4444;
+  background: #ef4444;
+  color: #fff;
+  font-weight: 900;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+@media (max-width: 420px){
+  .myCard{
+    width: 100%;
+  }
+  .myTr{
+    grid-template-columns: 80px 1fr 60px;
+  }
+}

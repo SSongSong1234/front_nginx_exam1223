@@ -1,0 +1,129 @@
+/* 상단 통계 카드 3개 */
+.inqStatGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.inqStatCard {
+  background: #fff;
+  border: 1px solid #eef0f2;
+  padding: 16px 18px;
+  position: relative;
+}
+
+.inqStatLabel {
+  font-size: 12px;
+  color: #6b7280;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.inqStatValue {
+  font-size: 22px;
+  font-weight: 900;
+  color: #111827;
+}
+
+.inqDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  position: absolute;
+  right: 14px;
+  top: 14px;
+}
+
+.inqDot.red {
+  background: #ef4444;
+}
+.inqDot.amber {
+  background: #f59e0b;
+}
+
+/* 필터 패널 */
+.inqFilterPanel {
+  padding: 14px;
+}
+
+.inqFilterStack {
+  display: grid;
+  grid-template-columns: 1.4fr 220px 220px;
+  gap: 10px;
+}
+
+.inqSearch {
+  width: 100%;
+  min-width: 0;
+}
+
+.inqSelect {
+  width: 100%;
+  min-width: 0;
+}
+
+/* 카테고리 pill */
+.inqCatPill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #eef2ff;
+  color: #3730a3;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+/* 제목 셀 */
+.inqTitleCell {
+  font-weight: 900;
+  color: #111827;
+}
+
+.inqDate {
+  font-size: 12px;
+  color: #64748b;
+  font-weight: 800;
+}
+
+/* 관리 버튼 */
+.inqBtnPrimary,
+.inqBtnGhost {
+  height: 34px;
+  min-width: 86px;
+  border-radius: 0; /* ✅ 직각 */
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.inqBtnPrimary {
+  background: #111827;
+  color: #fff;
+  border: 1px solid #111827;
+}
+
+.inqBtnGhost {
+  background: #fff;
+  color: #111827;
+  border: 1px solid #e5e7eb;
+}
+
+/* 빈 결과 */
+.inqEmpty {
+  text-align: center;
+  padding: 26px 10px;
+  color: #6b7280;
+  font-weight: 800;
+  font-size: 13px;
+}
+
+/* 반응형 */
+@media (max-width: 1100px) {
+  .inqStatGrid {
+    grid-template-columns: 1fr;
+  }
+  .inqFilterStack {
+    grid-template-columns: 1fr;
+  }
+}

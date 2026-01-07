@@ -1,0 +1,146 @@
+.findPage {
+  display: grid;
+  place-items: center;
+  padding: 60px 16px;
+  background: #ffffff;
+  color: #111827;
+}
+
+.findCard {
+  width: 520px;
+  max-width: 92vw;
+  text-align: center;
+}
+
+.findTitle {
+  margin: 0 0 10px;
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.findSub {
+  margin: 0 0 26px;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* 입력 영역 */
+.field {
+  width: 380px;
+  max-width: 100%;
+  margin: 0 auto 14px;
+  text-align: left;
+}
+
+.label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #374151;
+}
+
+.input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 10px 0;
+  outline: none;
+  font-size: 13px;
+  background: transparent;
+}
+
+.input::placeholder {
+  color: #9ca3af;
+}
+
+.hint {
+  width: 380px;
+  max-width: 100%;
+  margin: 6px auto 16px;
+  text-align: left;
+  font-size: 11px;
+  color: #9ca3af;
+}
+
+/* 버튼 */
+.sendBtn {
+  width: 380px;
+  max-width: 100%;
+  height: 46px;
+  border-radius: 8px;
+  border: 1px solid #111827;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.sendBtn.on {
+  background: #111827;
+  color: #ffffff;
+}
+
+.sendBtn.off {
+  background: #e5e7eb;
+  border-color: #e5e7eb;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* 아래 링크 */
+.bottomLinks {
+  margin-top: 14px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.linkBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #6b7280;
+  padding: 6px 4px;
+  font-size: 12px;
+}
+
+.linkBtn:hover {
+  color: #111827;
+}
+
+.sep {
+  opacity: 0.5;
+}
+
+/* 메시지 박스 */
+.alert {
+  width: 380px;
+  max-width: 100%;
+  margin: 0 auto 14px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  text-align: left;
+  line-height: 1.4;
+  border: 1px solid #e5e7eb;
+}
+
+.alert.error {
+  background: #fef2f2;
+  border-color: #fecaca;
+  color: #b91c1c;
+}
+
+.alert.success {
+  background: #ecfdf5;
+  border-color: #a7f3d0;
+  color: #047857;
+}
+
+.devHint {
+  margin-top: 14px;
+  font-size: 12px;
+  color: #9ca3af;
+}

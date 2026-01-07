@@ -1,0 +1,229 @@
+:root{
+  --text:#111827;
+  --muted:#6b7280;
+  --line:#e5e7eb;
+  --bg:#f9fafb;
+  --card:#ffffff;
+  --shadow: 0 14px 40px rgba(0,0,0,0.10);
+}
+
+.checkoutPage{
+  background: var(--bg);
+  min-height: calc(100vh - 72px);
+  padding: 46px 18px 70px;
+  color: var(--text);
+}
+
+.checkoutContainer{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.checkoutTitle{
+  margin: 0 0 22px;
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: -0.3px;
+}
+
+.checkoutGrid{
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 26px;
+  align-items: start;
+}
+
+/* 좌측 카드 */
+.payCard{
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+  padding: 18px;
+}
+
+.payCardHead{
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+
+.payTabs{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.payTab{
+  flex: 1;
+  height: 38px;
+  border: none;
+  background: #f3f4f6;
+  color: var(--text);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.payTab.isActive{
+  background: #fff;
+  border: 1px solid var(--line);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+}
+
+.payForm{
+  display: grid;
+  gap: 12px;
+}
+
+.field{ display: grid; gap: 6px; }
+.label{ font-size: 12px; color: var(--muted); font-weight: 800; }
+
+.inputRow{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.input{
+  width: 100%;
+  height: 40px;
+  border: 1px solid var(--line);
+  background: #fff;
+  outline: none;
+  padding: 0 12px;
+  font-size: 13px;
+}
+.cardIcon{
+  position: absolute;
+  right: 10px;
+  opacity: .55;
+  font-size: 16px;
+}
+
+.grid2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.select{
+  width: 100%;
+  height: 40px;
+  border: 1px solid var(--line);
+  padding: 0 10px;
+  background: #fff;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.payAlt{
+  border: 1px dashed var(--line);
+  border-radius: 12px;
+  padding: 14px;
+  color: var(--muted);
+}
+.payAltTitle{ color: var(--text); font-weight: 900; margin-bottom: 6px; }
+.payAltDesc{ margin: 0; line-height: 1.6; font-size: 13px; }
+
+/* 우측 주문내역 */
+.orderCard{
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+  padding: 18px;
+}
+
+.orderHead{
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+
+.orderRow{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0 12px;
+}
+
+.orderPlan{
+  font-weight: 900;
+}
+.orderRight{
+  font-weight: 900;
+}
+
+.orderDivider{
+  height: 1px;
+  background: var(--line);
+  margin: 6px 0 12px;
+}
+
+.orderMeta{
+  display: grid;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 13px;
+}
+.metaRow{
+  display:flex;
+  justify-content: space-between;
+}
+
+.orderTotal{
+  margin-top: 16px;
+  display:flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.orderTotal strong{
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.agreeRow{
+  margin-top: 14px;
+  display:flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 12px;
+  color: var(--text);
+  user-select: none;
+}
+
+.payError{
+  margin-top: 10px;
+  border: 1px solid #fecaca;
+  background: #fff1f2;
+  color: #991b1b;
+  padding: 10px 12px;
+  border-radius: 12px;
+  font-size: 13px;
+}
+
+.payBtn{
+  margin-top: 12px;
+  width: 100%;
+  height: 44px;
+  border: none;
+  background: #111827;
+  color: #fff;
+  font-weight: 900;
+  cursor: pointer;
+}
+.payBtn:disabled{
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+.cancelBtn{
+  margin-top: 10px;
+  width: 100%;
+  height: 40px;
+  border: none;
+  background: #f3f4f6;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+@media (max-width: 980px){
+  .checkoutGrid{ grid-template-columns: 1fr; }
+}

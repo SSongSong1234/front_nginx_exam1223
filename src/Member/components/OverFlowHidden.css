@@ -1,0 +1,77 @@
+.evpWrap{
+  position: relative;
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  background: #0b1220;
+  cursor: ew-resize;
+  user-select: none;
+  touch-action: none;
+}
+
+.evpImg{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
+
+/* 레이어 순서 */
+.evpAfter{ z-index: 1; }
+.evpBefore{ z-index: 2; }  /* clipPath 적용 대상 */
+
+.evpLabel{
+  position: absolute;
+  top: 10px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 900;
+  background: rgba(255,255,255,0.92);
+  border: 1px solid #e5e7eb;
+  color: #111827;
+  z-index: 4;
+}
+.evpLabel.left{ left: 10px; }
+.evpLabel.right{ right: 10px; }
+
+.evpSlider{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateX(0px);
+  z-index: 5;
+  pointer-events: none;
+}
+
+.evpLine{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  transform: translateX(-50%);
+  background: rgba(255,255,255,0.95);
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.25);
+}
+
+.evpKnob{
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  font-size: 14px;
+  font-weight: 900;
+  color: #111827;
+  background: rgba(255,255,255,0.95);
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.18);
+}

@@ -1,0 +1,294 @@
+/* WorkspaceAlbum 전용 (충돌 방지) */
+
+.weditAlb {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.weditAlb__header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 10px 8px 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: 18px;
+}
+
+.weditAlb__title {
+  font-size: 22px;
+  font-weight: 950;
+}
+
+.weditAlb__sub {
+  margin-top: 6px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.weditAlb__tabs {
+  display: flex;
+  gap: 10px;
+}
+
+.weditAlb__tab {
+  height: 32px;
+  padding: 0 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(0, 0, 0, 0.18);
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.weditAlb__tab.isActive {
+  border-color: rgba(56, 189, 248, 0.6);
+  box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.14);
+}
+
+.weditAlb__summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  padding: 16px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(180deg, rgba(23, 29, 43, 0.72), rgba(9, 10, 14, 0.62));
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.42);
+}
+
+.weditAlb__stat {
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.18);
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 14px;
+}
+
+.weditAlb__stat span {
+  color: rgba(255, 255, 255, 0.72);
+  font-weight: 800;
+}
+
+.weditAlb__stat b {
+  font-size: 18px;
+  font-weight: 950;
+}
+
+.weditAlb__message {
+  margin-top: 14px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(239, 68, 68, 0.22);
+  background: rgba(239, 68, 68, 0.08);
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 13px;
+}
+
+.weditAlb__grid {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(140px, 1fr));
+  gap: 14px;
+}
+
+.weditAlb__card {
+  position: relative;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.18);
+  padding: 10px;
+  overflow: hidden;
+}
+
+.weditAlb__thumb {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.25);
+  cursor: zoom-in;
+  padding: 0;
+}
+
+.weditAlb__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.weditAlb__thumbPh {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.18), rgba(30, 64, 175, 0.12));
+}
+
+.weditAlb__badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 5px 9px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 900;
+  background: rgba(56, 189, 248, 0.2);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.weditAlb__cardActions {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 8px;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: all 0.15s ease;
+}
+
+.weditAlb__card:hover .weditAlb__cardActions {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.weditAlb__iconBtn {
+  width: 34px;
+  height: 34px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(0, 0, 0, 0.22);
+  color: rgba(255, 255, 255, 0.86);
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.weditAlb__iconBtn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.weditAlb__iconBtn.isOn {
+  border-color: rgba(245, 158, 11, 0.6);
+  box-shadow: 0 0 0 2px rgba(245, 158, 11, 0.15);
+}
+
+.weditAlb__cardTitle {
+  margin-top: 10px;
+  font-weight: 900;
+  font-size: 12.5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.weditAlb__empty {
+  padding: 40px 12px;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.weditAlb__footNote {
+  margin-top: 16px;
+  padding: 10px 6px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* modal */
+.weditAlb__modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.74);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  z-index: 90;
+}
+
+.weditAlb__modalClose {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  width: 46px;
+  height: 46px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(0, 0, 0, 0.3);
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.weditAlb__modalBody {
+  width: min(980px, 92vw);
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(10, 12, 18, 0.92);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.55);
+  padding: 16px;
+  position: relative;
+}
+
+.weditAlb__modalTitle {
+  font-weight: 950;
+  margin-bottom: 10px;
+}
+
+.weditAlb__modalBody img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  display: block;
+}
+
+/* ✅ 모달 우측 하단 액션 버튼 2개 */
+.weditAlb__modalActions {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  display: flex;
+  gap: 10px;
+}
+
+.weditAlb__modalActionBtn {
+  width: 54px;
+  height: 54px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(0, 0, 0, 0.35);
+  color: rgba(255, 255, 255, 0.92);
+  font-weight: 950;
+  cursor: pointer;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+}
+
+.weditAlb__modalActionBtn:hover {
+  background: rgba(255, 255, 255, 0.10);
+}
+
+.weditAlb__modalActionBtn.isPrimary {
+  border-color: rgba(56, 189, 248, 0.45);
+  background: rgba(56, 189, 248, 0.20);
+}
+
+@media (max-width: 1200px) {
+  .weditAlb__grid {
+    grid-template-columns: repeat(4, minmax(140px, 1fr));
+  }
+}
+
+@media (max-width: 980px) {
+  .weditAlb__grid {
+    grid-template-columns: repeat(3, minmax(140px, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .weditAlb__grid {
+    grid-template-columns: repeat(2, minmax(140px, 1fr));
+  }
+}

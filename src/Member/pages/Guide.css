@@ -1,0 +1,166 @@
+:root{
+  --text:#111827;
+  --muted:#6b7280;
+  --line:#e5e7eb;
+  --bg:#ffffff;
+  --card:#ffffff;
+  --shadow: 0 14px 40px rgba(0,0,0,0.10);
+}
+
+.guidePage{
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* ===== HERO ===== */
+.guideHero{
+  padding: 42px 18px 10px;
+}
+.guideHeroInner{
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+.guideEyebrow{
+  display: inline-block;
+  font-size: 12px;
+  color: var(--text);
+  background: #f9fafb;
+  border: 1px solid var(--line);
+  padding: 8px 12px;
+  border-radius: 999px;
+  margin: 0 0 14px;
+}
+.guideTitle{
+  margin: 0;
+  font-size: 40px;
+  letter-spacing: -0.8px;
+}
+.guideSub{
+  margin: 10px 0 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+/* ===== TIMELINE ===== */
+.guideTimeline{
+  padding: 26px 18px 60px;
+}
+.guideContainer{
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* 중앙 점선 라인 */
+.timelineGrid{
+  position: relative;
+  padding-top: 16px;
+}
+.timelineGrid::before{
+  content:"";
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 2px dashed #d1d5db;
+  opacity: 0.9;
+}
+
+/* 한 스텝 줄 */
+.stepRow{
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: center;
+  padding: 26px 0;
+}
+.stepRow.reverse .stepText{
+  order: 2;
+}
+.stepRow.reverse .stepMedia{
+  order: 1;
+}
+
+/* 중앙 마커(점) */
+.centerMarker{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.dot{
+  display:block;
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: #9ca3af;
+  box-shadow: 0 0 0 6px rgba(156,163,175,0.18);
+}
+
+/* 텍스트 */
+.stepText{
+  padding: 4px 6px;
+}
+.stepNo{
+  font-size: 64px;
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: -1px;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.stepTitle{
+  margin: 0 0 8px;
+  font-size: 18px;
+  letter-spacing: -0.2px;
+}
+.stepDesc{
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.55;
+  font-size: 13px;
+}
+
+/* 이미지 카드 */
+.stepMedia{
+  display: flex;
+  justify-content: center;
+}
+.imgCard{
+  width: min(520px, 100%);
+  border-radius: 22px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.imgCard img{
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* ===== CTA ===== */
+.guideCta{
+  margin-top: 22px;
+  text-align: center;
+}
+.ctaText{
+  margin: 0 0 12px;
+  font-weight: 900;
+  color: var(--text);
+}
+.ctaBtn{
+  height: 44px;
+  padding: 0 22px;
+  border: none;
+  background: #111827;
+  color: #fff;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+

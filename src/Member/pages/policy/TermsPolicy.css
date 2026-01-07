@@ -1,0 +1,124 @@
+/* src/Member/pages/policy/PolicyTerms.css */
+
+.policyPage{
+  background:#fff;
+  padding: 18px 16px 60px;
+}
+
+.policyWrap{
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.policyTabs{
+  display:flex;
+  gap: 8px;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 10px;
+  margin-bottom: 18px;
+}
+
+.tabBtn{
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  padding: 10px 14px;
+  border-radius: 10px 10px 0 0;
+  cursor:pointer;
+  font-size: 13px;
+  color:#374151;
+}
+
+.tabBtn.active{
+  background:#fff;
+  border-bottom-color: #fff;
+  font-weight: 800;
+  color:#111827;
+}
+
+.policyHeader{
+  display:flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.policyTitle{
+  margin:0;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.policySub{
+  margin:6px 0 0;
+  color:#6b7280;
+  font-size: 13px;
+}
+
+.policyTools{
+  display:flex;
+  gap: 10px;
+  align-items:center;
+}
+
+.policySelect{
+  border:1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 8px 10px;
+  font-size: 13px;
+  background:#fff;
+}
+
+.policyPrint{
+  border:1px solid #111827;
+  background:#111827;
+  color:#fff;
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor:pointer;
+  font-size: 13px;
+}
+
+.policyBody{
+  border-top: 1px solid #f1f5f9;
+  padding-top: 18px;
+}
+
+.policySection{
+  padding: 16px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.secTitle{
+  margin:0 0 10px;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.secText{
+  margin:0;
+  font-size: 13px;
+  line-height: 1.85;
+  color:#111827;
+}
+
+.secList{
+  margin: 8px 0 0 18px;
+  padding: 0;
+  font-size: 13px;
+  line-height: 1.85;
+  color:#111827;
+}
+
+.topBtn{
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0,0,0,.10);
+  cursor:pointer;
+}
